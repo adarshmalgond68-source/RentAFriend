@@ -1,0 +1,12 @@
+{
+  "name": "bengaluru-buddy",
+  "version": "1.0.0",
+  "description": "Bengaluru Buddy MVP",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

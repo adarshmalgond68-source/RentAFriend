@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengaluru Buddy | Your Local Guide & Academic Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600 tracking-tighter">Bengaluru<span class="text-gray-800">Buddy</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600">
+                <a href="#about" class="hover:text-indigo-600 transition">About Us</a>
+                <a href="#rent-friend" class="hover:text-indigo-600 transition">Rent a Friend</a>
+                <a href="#hire-us" class="hover:text-indigo-600 transition">Hire Us</a>
+                <a href="#join-team" class="hover:text-indigo-600 transition">Be Part of Our Team</a>
+                <a href="#investors" class="hover:text-indigo-600 transition">Investors</a>
+            </div>
+            <button class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero-bg h-screen flex items-center justify-center text-center px-4">
+        <div class="fade-in max-w-3xl">
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">New to Bengaluru?</h1>
+            <p class="text-xl text-gray-200 mb-8">Don't get lost in translation. Hire a local friend, get your assignments done, or join our growing agency.</p>
+            <a href="#rent-friend" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition transform hover:scale-105 shadow-lg">Find a Local Friend</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Why Choose Us?</h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=2000&auto=format&fit=crop" alt="Bangalore Streets" class="rounded-lg shadow-xl">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-indigo-700">More Than Just a Guide</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Visiting Bengaluru can be overwhelming. From auto-rickshaw fares to finding the best local food, you need someone who knows the city inside out.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span><strong>Local Language Expertise:</strong> We speak Kannada, English, Hindi, and more. We handle the talking.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span><strong>Save Money:</strong> We negotiate with shopkeepers and transport services to ensure you pay the "local price," not the "tourist price."</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span><strong>Safety & Company:</strong> A trusted companion to navigate the city with you.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rent-friend" class="py-20 bg-indigo-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto glass-card p-10 rounded-2xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold text-indigo-900">Rent a Friend</h2>
+                    <p class="text-gray-600 mt-2">Fill in the details. We will match you with a verified anonymous agent on Instagram.</p>
+                </div>
+
+                <form id="rentForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Full Name</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-lg border focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Contact Number</label>
+                            <input type="tel" required class="w-full px-4 py-3 rounded-lg border focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none" placeholder="+91 99999 99999">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">Purpose of Visit</label>
+                        <select class="w-full px-4 py-3 rounded-lg border focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none">
+                            <option>Tourism / Sightseeing</option>
+                            <option>Shopping (Need bargaining help)</option>
+                            <option>Business / Official Work</option>
+                            <option>Food Exploration</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">Specific Requirements / Details</label>
+                        <textarea rows="3" class="w-full px-4 py-3 rounded-lg border focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 outline-none" placeholder="e.g., I need someone who knows the Chikpet market well..."></textarea>
+                    </div>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+                        <h4 class="font-bold text-yellow-700 text-sm uppercase mb-2">Terms & Conditions</h4>
+                        <div class="flex items-start mb-2">
+                            <input type="checkbox" required id="tc1" class="mt-1 mr-2 h-4 w-4 text-indigo-600">
+                            <label for="tc1" class="text-sm text-gray-600">I agree to pay Travel Allowance (TA) and Daily Allowance (DA) upfront to the agent.</label>
+                        </div>
+                        <div class="flex items-start">
+                            <input type="checkbox" required id="tc2" class="mt-1 mr-2 h-4 w-4 text-indigo-600">
+                            <label for="tc2" class="text-sm text-gray-600">I verify that I will maintain professional and good behavior at all times.</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-lg shadow-lg transition duration-300">
+                        Connect with Agent (Redirect to Insta)
+                    </button>
+                    <p class="text-xs text-center text-gray-500 mt-2">You will be redirected to our Instagram group to finalize the booking.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="hire-us" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">Hire Us (Academic Services)</h2>
+                <p class="text-gray-600 mt-4">Struggling with deadlines? Our student network has you covered.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 border rounded-xl hover:shadow-2xl transition group">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-indigo-600 transition">
+                        <svg class="w-8 h-8 text-indigo-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Assignment Writing</h3>
+                    <p class="text-gray-600">Handwritten assignments delivered neatly. We follow your college format strictly.</p>
+                    <a href="#" class="inline-block mt-4 text-indigo-600 font-semibold hover:underline">Request Price &rarr;</a>
+                </div>
+                <div class="p-8 border rounded-xl hover:shadow-2xl transition group">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-indigo-600 transition">
+                        <svg class="w-8 h-8 text-indigo-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Project Typing/Documentation</h3>
+                    <p class="text-gray-600">Fast typing, formatting, and report creation for engineering and degree projects.</p>
+                    <a href="#" class="inline-block mt-4 text-indigo-600 font-semibold hover:underline">Request Price &rarr;</a>
+                </div>
+                <div class="p-8 border rounded-xl hover:shadow-2xl transition group">
+                    <div class="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-indigo-600 transition">
+                        <svg class="w-8 h-8 text-indigo-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Presentations & More</h3>
+                    <p class="text-gray-600">Need a PPT for tomorrow? We create professional slides with content research.</p>
+                    <a href="#" class="inline-block mt-4 text-indigo-600 font-semibold hover:underline">Request Price &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join-team" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 pr-0 md:pr-10">
+                <h2 class="text-4xl font-bold mb-6">Work With Us</h2>
+                <p class="text-gray-400 mb-6 text-lg">
+                    Are you a student or a local expert? Join our agency. Get paid to write assignments or guide tourists.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-indigo-500 rounded-full flex items-center justify-center mr-4">1</div>
+                        <p>Submit your skills (Language, Typing, Writing).</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-indigo-500 rounded-full flex items-center justify-center mr-4">2</div>
+                        <p>Get verified by our admin team.</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-indigo-500 rounded-full flex items-center justify-center mr-4">3</div>
+                        <p>Receive tasks and earn money.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 bg-gray-800 p-8 rounded-xl w-full">
+                <h3 class="text-2xl font-bold mb-4 text-indigo-400">Join the Agency</h3>
+                <form class="space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full bg-gray-700 text-white px-4 py-3 rounded border border-gray-600 focus:border-indigo-500 outline-none">
+                    <input type="text" placeholder="Your Skills (e.g., Kannada, C++, Typing)" class="w-full bg-gray-700 text-white px-4 py-3 rounded border border-gray-600 focus:border-indigo-500 outline-none">
+                    <textarea placeholder="Why should we hire you?" class="w-full bg-gray-700 text-white px-4 py-3 rounded border border-gray-600 focus:border-indigo-500 outline-none"></textarea>
+                    <button type="button" onclick="alert('Application Sent! We will contact you.')" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 rounded">Apply Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="investors" class="py-20 bg-gray-50 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Investors</h2>
+            <p class="max-w-2xl mx-auto text-gray-600 mb-8">
+                We are building the largest network of trusted local companions and academic freelancers in Bengaluru. 
+                Interested in fueling our growth?
+            </p>
+            <button class="border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white font-bold py-3 px-8 rounded-full transition">
+                Contact for Investment
+            </button>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-600">&copy; 2025 Bengaluru Buddy Agency. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-indigo-600">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-indigo-600">Twitter</a>
+                <a href="#" class="text-gray-400 hover:text-indigo-600">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
